@@ -7,14 +7,14 @@
 char pilha[MAX][50];
 int topo = -1;
 
-int push(char valor[]) {
+int push(char elemento[]) {
     if (topo >= MAX - 1) {
         printf("ERRO: Pilha cheia!\n");
         return -1;
     }
 
     topo++;
-    strcpy(pilha[topo], valor);
+    strcpy(pilha[topo], elemento);
     return topo;
 }
 
